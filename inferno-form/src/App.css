@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: beige;
+}
+
+.App .logo {
+  height: 80px;
+}
+
+.App .main-table {
+  border-color: gray;
+}
+
+.App th {
+  text-align: center;
+}
