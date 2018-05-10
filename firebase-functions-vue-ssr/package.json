@@ -1,0 +1,48 @@
+{
+  "name": "firebase-functions-vue-ssr",
+  "description": "VueJs using service side render on Firebase Functions",
+  "version": "1.0.0",
+  "author": "laiso",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "npm run build && npm run start-server",
+    "build": "npm run build-client && npm run build-server",
+    "build-client": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "build-server": "cross-env NODE_ENV=production webpack --config webpack.server.config.js --progress --hide-modules",
+    "start-server": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.2",
+    "firebase-admin": "^5.12.0",
+    "firebase-functions": "^1.0.2",
+    "leveldown": "^3.0.2",
+    "levelup": "^2.0.2",
+    "vue": "~> 2.5.16",
+    "vue-router": "^3.0.1",
+    "vue-server-renderer": "^2.5.16"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.4",
+    "firebase-tools": "^3.18.4",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "vue-loader": "^13.7.1",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1",
+    "webpack-merge": "^4.1.1"
+  }
+}
