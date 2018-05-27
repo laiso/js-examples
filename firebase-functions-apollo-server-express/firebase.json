@@ -1,0 +1,20 @@
+{
+  "functions": {
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
+    ]
+  },
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {"source": "/graphql**", "function": "api"},
+      {"source": "/graphiql**", "function": "api"},
+      {"source": "/schema**", "function": "api"}
+    ]
+  }
+}
