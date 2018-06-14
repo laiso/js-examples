@@ -5,6 +5,8 @@
   const axios = require('axios');
   const csv = require('fast-csv')
   
+  const PAGE_LIMIT = 100
+  
   var csvStream = csv.createWriteStream({delimiter: "\t"}),
     writableStream = fs.createWriteStream("my.csv");
   
@@ -13,6 +15,7 @@
   });
   csvStream.pipe(writableStream);
   
+  const timer = ms => new Promise( res => setTimeout(res, ms));
   
   async function fetchData(page=1) {
     console.log(`page: ${page}`)
@@ -32,12 +35,13 @@
       csvStream.write({title, speaker, url, body});
     })
     
-    return page < 9
+    return page < PAGE_LIMIT
   }
   
   let page = 1
   while (await fetchData(page)) {
     page++
+    await timer(1000)
   }
   
   csvStream.end();
