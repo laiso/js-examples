@@ -1,0 +1,21 @@
+{
+  "name": "vue-v3-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@vue/compiler-core": "file:/src/github.com/vuejs/vue-next/packages/compiler-core",
+    "@vue/compiler-dom": "file:/go/src/github.com/vuejs/vue-next/packages/compiler-dom",
+    "@vue/reactivity": "file:/src/github.com/vuejs/vue-next/packages/reactivity",
+    "@vue/runtime-core": "file:/src/github.com/vuejs/vue-next/packages/runtime-core",
+    "@vue/runtime-dom": "file:/src/github.com/vuejs/vue-next/packages/runtime-dom",
+    "@vue/server-renderer": "file:/src/github.com/vuejs/vue-next/packages/server-renderer",
+    "@vue/shared": "file:/src/github.com/vuejs/vue-next/packages/shared",
+    "@vue/template-explorer": "file:/src/github.com/vuejs/vue-next/packages/template-explorer",
+    "vue": "file:/src/github.com/vuejs/vue-next/packages/vue"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.0.0",
+    "typescript": "^3.6.3"
+  }
+}
