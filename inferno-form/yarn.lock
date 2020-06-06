@@ -2600,13 +2600,21 @@ indexof@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
 
-inferno-component@3.3.1, inferno-component@^3.0.3:
+inferno-component@^3.0.3:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-3.3.1.tgz#ddf28ff0bf195b641d77e8e8097ba488730adca5"
   dependencies:
     inferno "3.3.1"
     inferno-shared "3.1.1"
     inferno-vnode-flags "^3.0.0"
+
+inferno-component@^3.3.1:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-3.10.1.tgz#2242409dab4c1f165f3af7c89e4945bcb359b1b3"
+  dependencies:
+    inferno "3.10.1"
+    inferno-shared "3.10.1"
+    inferno-vnode-flags "3.10.1"
 
 inferno-dev-utils@^2.0.0:
   version "2.0.0"
@@ -2676,9 +2684,24 @@ inferno-shared@3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-3.1.1.tgz#70376e29a56c53f6ba1e942191fe5cb710654f73"
 
+inferno-shared@3.10.1:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-3.10.1.tgz#6ad59d64ca03c0fdcc8495d4864410cafee81332"
+
 inferno-vnode-flags@3.0.0, inferno-vnode-flags@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-3.0.0.tgz#f396390f3dafae3b76eea04d04eed6cf2004473b"
+
+inferno-vnode-flags@3.10.1:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-3.10.1.tgz#88a4528a3b4df0f33a3ace68dc45f05b651c0e41"
+
+inferno@3.10.1, inferno@^3.3.1:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-3.10.1.tgz#5d292e6b1e848ef7f09e3e1b6b2029b703b2baf2"
+  dependencies:
+    inferno-shared "3.10.1"
+    inferno-vnode-flags "3.10.1"
 
 inferno@3.3.1, inferno@^3.0.3:
   version "3.3.1"
@@ -5373,8 +5396,8 @@ websocket-driver@>=0.5.1:
     websocket-extensions ">=0.1.1"
 
 websocket-extensions@>=0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.1.tgz#76899499c184b6ef754377c2dbb0cd6cb55d29e7"
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
 
 whatwg-encoding@^1.0.1:
   version "1.0.1"
