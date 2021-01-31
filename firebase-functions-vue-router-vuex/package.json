@@ -94,6 +94,6 @@
     "vue-server-renderer": "^2.4.2",
     "vuex": "2.x",
     "vuex-router-sync": "4.x",
-    "yarn": "^1.6.0"
+    "yarn": "^1.22.0"
   }
 }
