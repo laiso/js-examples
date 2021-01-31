@@ -1,0 +1,20 @@
+{
+  "name": "vue2x3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vue3": "npm:vue@^3.0.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0"
+  }
+}
